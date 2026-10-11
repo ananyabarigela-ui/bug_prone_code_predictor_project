@@ -1,0 +1,86 @@
+{
+  "dataset": "NASA PROMISE CM1",
+  "source_file": "data/cm1.csv",
+  "rows_used": 498,
+  "feature_count": 21,
+  "features": [
+    "loc",
+    "v(g)",
+    "ev(g)",
+    "iv(g)",
+    "n",
+    "v",
+    "l",
+    "d",
+    "i",
+    "e",
+    "b",
+    "t",
+    "lOCode",
+    "lOComment",
+    "lOBlank",
+    "locCodeAndComment",
+    "uniq_Op",
+    "uniq_Opnd",
+    "total_Op",
+    "total_Opnd",
+    "branchCount"
+  ],
+  "class_counts": {
+    "not_defect_prone": 449,
+    "defect_prone": 49
+  },
+  "training_rows": 373,
+  "test_rows": 125,
+  "selection_metric": "F1 Score for defect-prone class",
+  "selected_model": "Logistic Regression",
+  "selected_model_metrics": {
+    "Model": "Logistic Regression",
+    "Accuracy": 0.736,
+    "Precision": 0.2,
+    "Recall": 0.5833333333333334,
+    "F1 Score": 0.2978723404255319
+  },
+  "confusion_matrix_labels": [
+    "actual_not_defect_prone",
+    "actual_defect_prone"
+  ],
+  "confusion_matrix": [
+    [
+      85,
+      28
+    ],
+    [
+      5,
+      7
+    ]
+  ],
+  "classification_report": {
+    "Not defect-prone": {
+      "precision": 0.9444444444444444,
+      "recall": 0.7522123893805309,
+      "f1-score": 0.8374384236453202,
+      "support": 113.0
+    },
+    "Defect-prone": {
+      "precision": 0.2,
+      "recall": 0.5833333333333334,
+      "f1-score": 0.2978723404255319,
+      "support": 12.0
+    },
+    "accuracy": 0.736,
+    "macro avg": {
+      "precision": 0.5722222222222222,
+      "recall": 0.6677728613569321,
+      "f1-score": 0.567655382035426,
+      "support": 125.0
+    },
+    "weighted avg": {
+      "precision": 0.8729777777777777,
+      "recall": 0.736,
+      "f1-score": 0.7856400796562205,
+      "support": 125.0
+    }
+  },
+  "dropped_constant_columns": []
+}
